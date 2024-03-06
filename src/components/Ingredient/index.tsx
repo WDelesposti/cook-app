@@ -19,7 +19,7 @@ export function Ingredient({
       style={[styles.container, selected && styles.selected]}
       {...rest}
     >
-      <Image source={{uri: image}} style={styles.image} />
+      <Image source={{ uri: image }} style={styles.image} />
       <Text style={styles.title}>{name}</Text>
     </Pressable>
   );
