@@ -1,13 +1,25 @@
 import { ScrollView } from "react-native";
 
-import { Ingredient } from "../Ingredient";
+//import { services } from "@/src/services"
 
 import { styles } from "./styles";
+import { Ingredient, IngredientsProps } from "@/src/components/Ingredient";
 
-export function Ingredients() {
+type Props = {
+  ingredients: IngredientsProps[];
+};
+
+export function Ingredients({ ingredients }: Props) {
   return (
-    <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false}>
-      <Ingredient name="Maca" image="" selected />
+    <ScrollView
+      horizontal
+      style={styles.container}
+      contentContainerStyle={styles.ingredientsContent}
+      showsHorizontalScrollIndicator={false}
+    >
+      {ingredients.map((ingredient) => (
+        <Ingredient key={ingredient.name} name={ingredient.name} image="" />
+      ))}
     </ScrollView>
   );
 }

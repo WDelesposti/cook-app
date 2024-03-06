@@ -12,10 +12,6 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 6,
   },
-  title: {
-    fontSize: theme.fonts.size.heading.sm,
-    fontFamily: theme.fonts.family.medium,
-  },
   image: {
     width: 16,
     height: 16,
@@ -24,5 +20,9 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: theme.colors.green_600,
     backgroundColor: theme.colors.green_100,
+  },
+  title: {
+    fontSize: theme.fonts.size.body.sm,
+    fontFamily: theme.fonts.family.medium,
   },
 });

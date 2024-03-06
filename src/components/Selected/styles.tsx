@@ -11,13 +11,13 @@ export const styles = StyleSheet.create({
     width: "100%",
     alignSelf: "center",
   },
-  header:{
+  header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 34,
   },
-  label:{
+  label: {
     color: theme.colors.white,
     fontSize: theme.fonts.size.body.sm,
     fontFamily: theme.fonts.family.regular,
